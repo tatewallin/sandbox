@@ -1,6 +1,8 @@
 // ***************************************************************************************************************
 // NOTE:  See Confluence for a detailed reference guide:  https://confluence.mutualofomaha.com/confluence/x/iQX_Cw
 // ***************************************************************************************************************
+apply plugin: 'groovy'
+apply plugin: 'java'
 
 // For a Groovy JAR project...
 apply plugin: 'com.mutualofomaha.groovy-conventions'
@@ -25,11 +27,18 @@ description = 'sandbox'
 group = 'com.mutualofomaha.tw'
 
 dependencies {
-    compile 'log4j:log4j:1.2.17'
-    compile "com.mutualofomaha:mutualofomahautilities:5.2.+"
 
+    compile "log4j:log4j:1.2.17"
+    compile "com.mutualofomaha:mutualofomahautilities:5.2.+"
+    compile "com.mutualofomaha:enterprise-ldap-service-client:1.0.11"
     compile "org.codehaus.groovy:groovy-all:2.3.3"
-    testCompile 'junit:junit:4.12'
+    compile "org.codehaus.groovy.modules.http-builder:http-builder:0.7.2"
+    compile "com.google.code.gson:gson:2.2.2"
+    compile "org.hibernate:hibernate-core:4.3.5.Final"
+    compile "org.hibernate:hibernate-entitymanager:4.3.5.Final"
+    compile "com.microsoft:sqljdbc:4.0.2206"
+    compile "com.oracle:ojdbc:11.2.0.1.0"
+    compile "junit:junit:4.12"
 }
 
 //pipelineConfig {
