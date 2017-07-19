@@ -1,0 +1,45 @@
+// ***************************************************************************************************************
+// NOTE:  See Confluence for a detailed reference guide:  https://confluence.mutualofomaha.com/confluence/x/iQX_Cw
+// ***************************************************************************************************************
+
+// For a Groovy JAR project...
+apply plugin: 'com.mutualofomaha.groovy-conventions'
+
+// For a Java JAR project...
+apply plugin: 'com.mutualofomaha.java-conventions'
+apply plugin: 'com.mutualofomaha.jar-conventions'
+
+// For a Java WAR project...
+// apply plugin: 'com.mutualofomaha.war-conventions'
+
+// For a Java Portlet project...
+// apply plugin: 'com.mutualofomaha.portlet-conventions'
+
+// For a IIB BAR project...
+// apply plugin: 'com.mutualofomaha.bar-conventions'
+
+// For projects building on Jenkins...
+// apply plugin: 'com.mutualofomaha.jenkins-conventions'
+
+description = 'sandbox'
+group = 'com.mutualofomaha.tw'
+
+dependencies {
+    compile 'log4j:log4j:1.2.17'
+
+    testCompile 'junit:junit:4.12'
+}
+
+//pipelineConfig {
+//    asi = '***CHANGEME***'
+//    projectName = '***CHANGEME***'
+//
+//    createPipeline {
+//        initJob()
+//        buildAndUnitTestJob()
+//        staticCodeAnalysisJob()
+//        publishSnapshotJob()
+//        promoteToReleaseCandidateJob()
+//        promoteToReleaseJob()
+//    }
+//}
