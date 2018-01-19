@@ -39,6 +39,8 @@ dependencies {
     compile "com.microsoft:sqljdbc:4.0.2206"
     compile "com.oracle:ojdbc:11.2.0.1.0"
     compile "junit:junit:4.12"
+    compile 'joda-time:joda-time:2.9.9'
+    compile 'com.fasterxml.jackson.datatype:jackson-datatype-joda:2.9.1'
 }
 
 //pipelineConfig {
